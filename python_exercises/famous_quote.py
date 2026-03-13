@@ -1,0 +1,1 @@
+print(' David Goggins once said, "You are in danger of living a life so comfortable and soft, that you will die without ever realizing your true potential"')
