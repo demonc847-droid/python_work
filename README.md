@@ -61,18 +61,23 @@ A stunning HTML/CSS implementation of a realistic 3D button with:
 1. **Clone this repository:**
    ```bash
    git clone https://github.com/demonc847-droid/python_work.git
+   cd python_work
    ```
 
-2. **Run Python exercises:**
+2. **Set up virtual environment (recommended):**
    ```bash
-   cd python_work
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Run Python exercises:**
+   ```bash
    python hello_world.py
    python people_manager.py
    ```
 
-3. **View web projects:**
+4. **View web projects:**
    ```bash
-   cd python_work
    open index.html  # View the realistic button
    ```
 
