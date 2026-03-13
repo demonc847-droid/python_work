@@ -1,6 +1,14 @@
 # 🚀 Python Learning Journey
 
+![Python Learning Journey Banner](0_n-2bW82Z6m6U2bij.jpg)
+
 Welcome to my Python programming repository! This is where I document my journey from Python beginner to proficient developer through hands-on exercises, projects, and experiments.
+
+## 🐾 Coding Companion
+
+![Coding Cat](images.jpeg)
+
+*Even my feline friend approves of my Python journey! 🐱💻*
 
 ## 📚 What's Inside
 
