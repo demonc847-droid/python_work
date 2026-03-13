@@ -4,11 +4,11 @@
 
 Welcome to my Python programming repository! This is where I document my journey from Python beginner to proficient developer through hands-on exercises, projects, and experiments.
 
-## 🐾 Coding Companion
+## 🐾 Coding Companions
 
-![Coding Cat](images.jpeg)
+![Coding Cats](images.jpeg)
 
-*Even my feline friend approves of my Python journey! 🐱💻*
+*Even my feline friends approve of my Python journey! 🐱💻*
 
 ## 📚 What's Inside
 
