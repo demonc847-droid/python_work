@@ -1,0 +1,131 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Realistic Red Button Styles */
+.realistic-button {
+    /* Button dimensions and positioning */
+    position: relative;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* Red gradient background */
+    background: linear-gradient(145deg, #ff3333, #cc0000);
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.3),
+        0 6px 6px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    
+    /* 3D effect */
+    transform: translateY(0);
+}
+
+/* Button hover effect */
+.realistic-button:hover {
+    /* Lift effect */
+    transform: translateY(-3px);
+    
+    /* Enhanced shadow for 3D effect */
+    box-shadow: 
+        0 15px 25px rgba(0, 0, 0, 0.4),
+        0 8px 8px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+    
+    /* Slight scale up */
+    transform: translateY(-3px) scale(1.02);
+    
+    /* Brighter red on hover */
+    background: linear-gradient(145deg, #ff4d4d, #e60000);
+}
+
+/* Button active/click effect */
+.realistic-button:active {
+    /* Pressed down effect */
+    transform: translateY(2px) scale(0.98);
+    
+    /* Compressed shadow */
+    box-shadow: 
+        0 5px 10px rgba(0, 0, 0, 0.3),
+        0 3px 3px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+    
+    /* Darker red when pressed */
+    background: linear-gradient(145deg, #cc0000, #990000);
+}
+
+/* Additional realistic effects */
+.realistic-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.realistic-button:hover::before {
+    opacity: 0.5;
+}
+
+/* Subtle texture effect */
+.realistic-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* Focus outline for accessibility */
+.realistic-button:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .realistic-button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
